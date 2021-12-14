@@ -24,5 +24,5 @@ function getSortedDimensions(dimensions) {
   return dimensions
     .split("x")
     .map((x) => parseInt(x))
-    .sort();
+    .sort((a, b) => a - b);
 }
